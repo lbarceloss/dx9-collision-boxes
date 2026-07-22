@@ -46,13 +46,13 @@ For best compatibility, keep the following files in the same directory:
 
 ## Technical Notes
 
-This project does **not** currently use the MinHook libraries.
+Although the current build uses a MinHook-compatible trampoline approach, it is **not** linked against the MinHook library.
 
-Instead, it uses a custom trampoline/hooking implementation written specifically for PangYa.
+The objective is to completely remove this dependency and replace it with a custom trampoline implementation written specifically for PangYa.
 
-Several people requested this tool as soon as possible, so I decided to release it before cleaning up the hooking code.
+That implementation is still under development, but due to community requests, this first version is being released ahead of schedule.
 
-A future release will include a cleaner implementation.
+The custom trampoline will be introduced in a future release.
 
 ---
 
